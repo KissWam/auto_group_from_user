@@ -1,21 +1,31 @@
 <?php
 require_once __DIR__ . '/hook.php';
+
+define('PLUGIN_AUTOGROUPFROMUSER_VERSION', '1.0.1');
+
 function plugin_version_autogroupfromuser() {
    return [
        'name' => 'Auto Group from User',
-       'version' => '1.0.1',
+       'version' => PLUGIN_AUTOGROUPFROMUSER_VERSION,
        'author' => 'KISSWAM',
        'license' => 'GPLv2+',
-       'homepage' => '',
-       'minGlpiVersion' => '11.0'
+       'homepage' => 'https://github.com/KissWam/auto_group_from_user',
+       'requirements' => [
+           'glpi' => [
+               'min' => '10.0',
+               'max' => '11.1'
+           ]
+       ]
    ];
 }
+
 function plugin_autogroupfromuser_check_prerequisites() {
-   if (defined('GLPI_VERSION') && version_compare(GLPI_VERSION, '11.0', '>=')) {
+   if (defined('GLPI_VERSION') && version_compare(GLPI_VERSION, '10.0', '>=')) {
        return true;
    }
    return false;
 }
+
 function plugin_init_autogroupfromuser() {
    global $PLUGIN_HOOKS;
    $PLUGIN_HOOKS['csrf_compliant']['autogroupfromuser'] = true;
@@ -38,9 +48,15 @@ function plugin_init_autogroupfromuser() {
    $PLUGIN_HOOKS['config_page']['autogroupfromuser'] = 'front/config.php';
    autogroupfromuser_log('setup_init', ['ts' => date('Y-m-d H:i:s')]);
 }
+
+function plugin_autogroupfromuser_check_config($verbose = false) {
+   return true;
+}
+
 function plugin_autogroupfromuser_install() {
    return true;
 }
+
 function plugin_autogroupfromuser_uninstall() {
    return true;
 }

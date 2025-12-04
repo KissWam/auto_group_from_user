@@ -1,0 +1,60 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: autogroupfromuser 1.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-04 00:00+0000\n"
+"PO-Revision-Date: 2025-12-04 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Plugin configuration"
+msgstr "Plugin configuration"
+
+msgid "Rules"
+msgstr "Rules"
+
+msgid "Skip when user empty"
+msgstr "Skip when user empty"
+
+msgid "Trigger when group empty"
+msgstr "Trigger when group empty"
+
+msgid "Trigger when user changed"
+msgstr "Trigger when user changed"
+
+msgid "Skip when both user and group empty"
+msgstr "Skip when both user and group empty"
+
+msgid "Apply to assets"
+msgstr "Apply to assets"
+
+msgid "Computer"
+msgstr "Computer"
+
+msgid "Monitor"
+msgstr "Monitor"
+
+msgid "Peripheral"
+msgstr "Peripheral"
+
+msgid "Phone"
+msgstr "Phone"
+
+msgid "Printer"
+msgstr "Printer"
+
+msgid "Network equipment"
+msgstr "Network equipment"
+
+msgid "Logging"
+msgstr "Logging"
+
+msgid "Enable logging"
+msgstr "Enable logging"
+
+msgid "Save"
+msgstr "Save"
