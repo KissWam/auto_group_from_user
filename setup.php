@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/hook.php';
 
-define('PLUGIN_AUTOGROUPFROMUSER_VERSION', '1.0.1');
+define('PLUGIN_AUTOGROUPFROMUSER_VERSION', '1.0.2');
 
 function plugin_version_autogroupfromuser() {
    return [
@@ -13,7 +13,7 @@ function plugin_version_autogroupfromuser() {
        'requirements' => [
            'glpi' => [
                'min' => '10.0',
-               'max' => '11.1'
+               'max' => '12.0.99'
            ]
        ]
    ];
